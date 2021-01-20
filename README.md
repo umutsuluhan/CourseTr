@@ -68,3 +68,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# CourseTr
+
+## SHORT EXPLANATION AND USAGE SCENARIOS
+
+Project is created ReactJs, React-Bootstrap, React-Router. Project is a course registration system which users can register and enroll to courses. User can register, and sign in from the main page if user is already registered. User can click About Us and Contact Us button to obtain information about course site and contact information. User can enroll to a course from Offered Courses button to enroll to a course if user is already signed in. In the Settings part, user can change e-mail, first name, last name,  phone number and country information. 
+
+When you display project as mobile or tablet, navigation bar is placed into a navigation toggle at the right side of the top of the page. You can navigate through pages using navigation toggle.
+
+## RUN SOURCE CODE
+
+First clone the repo to your local storage:
+
+`git clone https://github.com/umutsuluhan/CourseTr`
+
+Go to your local folder, then you may run:
+
+`npm install`
+
+to first retrieve required node modules, then run:
+
+`npm start`
+
+to serve the project files on the default port.
+
+## USERFLOW
+
+User registration -> User can register to course system using Register form. E-mail address, username, phone number must be unique for each user. If any registration form violates this constraint, user is notified with particular attribute violated. Otherwise, user is registered to the system.
+
+User sign-in -> User can sign in to course system using Sign in form. If user enters right username and password, system logins user to system. Otherwise, user is not signed in to the system.
+
+Course Enrollment -> User can enroll to a course by Offered Courses page after login. User can choose a course and enroll from a table of courses and enrollment information is hold by system.
+
+Settings Change -> User can change e-mail address, first name, last name, phone number, and country by Settings page after login. If entered values for new attributes does not violate constraints of attributes, settings are changed, and updated in the system.
